@@ -1,0 +1,22 @@
+name: Simple CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  simple-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        run: |
+          echo "Step: Checkout Code f111111111111"
+
+      - name: Install Dependencies
+        run: |
+          echo "Step: Install Dependencies f1111111111111111"
+
+    
