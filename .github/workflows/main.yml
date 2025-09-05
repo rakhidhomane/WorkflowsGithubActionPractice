@@ -1,0 +1,34 @@
+name: Simple CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - feature/*
+  pull_request:
+
+jobs:
+  simple-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        run: echo "Step: Checkout Code"
+
+      - name: Install Dependencies
+        run: echo "Step: Install Dependencies"
+
+      - name: Build Application
+        run: echo "Step: Build Application"
+
+      - name: Run Tests
+        run: echo "Step: Run Tests"
+
+      - name: Code Quality Check
+        run: echo "Step: Code Quality Check"
+
+      - name: Package/Artifact Upload
+        run: echo "Step: Package/Artifact Upload"
+
+      - name: Deploy (if applicable)
+        run: echo "Step: Deploy"
